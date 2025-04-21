@@ -31,7 +31,19 @@ mod main {
     debug!("Found IPs {:?}", ips);
 
     let ip = ips.get(0).cloned().ok_or(eyre!("No IPs found"))?;
-    let conn = conn::BitcoinNodeConn::connect(ip)?;
+    let mut handles = Vec::with_capacity(ips.len());
+    // for ip in ips {
+    // let conn = conn::BitcoinNodeConn::connect(ip)?;
+    handles.push(std::thread::spawn(move || -> color_eyre::Result<()> {
+      let _ = conn::BitcoinNodeConn::connect(ip)?;
+
+      Ok(())
+    }));
+    // }
+
+    for handle in handles {
+      handle.join().unwrap()?;
+    }
 
     Ok(())
   }
@@ -39,13 +51,14 @@ mod main {
 
 mod conn {
   use std::{
+    collections::VecDeque,
     io::{Read, Write},
     net::{IpAddr, Ipv4Addr, SocketAddr, TcpStream},
   };
 
   use bitcoin::{
     consensus::{Decodable as _, Encodable},
-    hex::{self, DisplayHex},
+    hex::{self, DisplayHex, FromHex},
     p2p::{Address, ServiceFlags, message_network::VersionMessage},
   };
 
@@ -61,7 +74,7 @@ mod conn {
       let port = 8333;
       let addr = SocketAddr::new(ip, port);
       let stream = TcpStream::connect(addr).wrap_err("Couldn't connect to main bitcoin node")?;
-      trace!(?ip, ?port, "Connected to node");
+      debug!(?ip, ?port, "Connected to node");
       let mut conn = Self { stream, them: addr };
 
       conn.send_version()?;
@@ -91,23 +104,32 @@ mod conn {
         relay: false,
       };
 
+      trace!("Sending version message");
       message.consensus_encode(&mut self.stream)?;
+      trace!("Sent version message");
+
       Ok(())
     }
 
     fn receive_version(&mut self) -> color_eyre::Result<VersionMessage> {
-      let mut buffer = [0; 64];
-      self.stream.read_exact(&mut buffer)?;
-      let dump = buffer.to_lower_hex_string();
-      let str = String::from_utf8_lossy(&buffer);
-      trace!(?buffer, ?dump, %str, "Debug read buffer");
+      // let mut buffer = [0; 85 + 1];
+      // self.stream.read_exact(&mut buffer)?;
+      // let dump = buffer.to_lower_hex_string();
+      // let str = String::from_utf8_lossy(&buffer);
+      // trace!(?buffer, ?dump, %str, "Debug read buffer");
 
-      todo!()
-      // let message =
-      //   bitcoin::p2p::message_network::VersionMessage::consensus_decode(&mut self.stream)
-      //     .wrap_err("Failed to decode version message")?;
-      // trace!(?message, "Received version message");
-      // Ok(message)
+      // use bitcoin::consensus::ReadExt as _;
+      // let version = buffer[..].read_u32();
+
+      // todo!()
+      // let stream = &mut self.stream;
+      let stream = &mut VecDeque::from(Vec::from_hex(
+        "1f08b58a4d59bf0c127bfeb143420b46ba474e76e3bd7f5c811991b80ea18c1da545d1cbfee58e89bc90db5496b5aa704b25522f4d37322e39c3a5021c7f806abc74cafb4c5fe40decb8f7729544ea2b106cf6035972",
+      )?);
+      let message = bitcoin::p2p::message_network::VersionMessage::consensus_decode(stream)
+        .wrap_err("Failed to decode version message")?;
+      trace!(?message, "Received version message");
+      Ok(message)
     }
   }
 }
