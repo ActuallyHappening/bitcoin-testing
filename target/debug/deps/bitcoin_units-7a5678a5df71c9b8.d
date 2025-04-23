@@ -1,0 +1,12 @@
+/home/ah/Desktop/bitcoin-testing/target/debug/deps/libbitcoin_units-7a5678a5df71c9b8.rmeta: /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/lib.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/amount.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/fee_rate.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/mod.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/absolute.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/relative.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/parse.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/weight.rs
+
+/home/ah/Desktop/bitcoin-testing/target/debug/deps/bitcoin_units-7a5678a5df71c9b8.d: /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/lib.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/amount.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/fee_rate.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/mod.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/absolute.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/relative.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/parse.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/weight.rs
+
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/lib.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/amount.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/fee_rate.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/mod.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/absolute.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/locktime/relative.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/parse.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bitcoin-units-0.1.2/src/weight.rs:

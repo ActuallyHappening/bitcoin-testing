@@ -1,0 +1,12 @@
+/home/ah/Desktop/bitcoin-testing/target/debug/deps/libcolor_eyre-fe84fc1f749f165c.rmeta: /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/lib.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/config.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/fmt.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/handler.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/private.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/section/mod.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/section/help.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/writers.rs
+
+/home/ah/Desktop/bitcoin-testing/target/debug/deps/color_eyre-fe84fc1f749f165c.d: /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/lib.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/config.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/fmt.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/handler.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/private.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/section/mod.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/section/help.rs /home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/writers.rs
+
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/lib.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/config.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/fmt.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/handler.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/private.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/section/mod.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/section/help.rs:
+/home/ah/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/color-eyre-0.6.3/src/writers.rs:
